@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 04 - Exercise01</title>
+</head>
+<body >
+    <input class="modbutton" id="button" type="submit" name="agebutton" value="Verify Age" onclick="FuncAge();"/>
+    <style>
+        body {
+          background-image: url('gc.jpg');
+        }
+        </style>
+
+    <center><IMG SRC="spo.gif"></center>
+    
+
+
+</body>
+
+<script>
+
+    function FuncAge() {
+        while(true){
+            let value = +prompt("Please enter age : ");
+            if(!value)break;
+            if(value >= 18)break;
+        }
+        alert("Verified");
+    }
+</script> 
+</html>
